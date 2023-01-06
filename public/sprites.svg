@@ -1,0 +1,9 @@
+<svg display="none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="slider-arrow-button-prev" viewBox="0 0 48 16">
+    <path d="M16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16C12.4183 16 16 12.4183 16 8ZM48 6.5L8 6.5V9.5L48 9.5V6.5Z"/>
+  </symbol>
+
+   <symbol id="slider-arrow-button-next" viewBox="0 0 48 16">
+    <path d="M32 8C32 12.4183 35.5817 16 40 16C44.4183 16 48 12.4183 48 8C48 3.58172 44.4183 0 40 0C35.5817 0 32 3.58172 32 8ZM0 9.5L40 9.5V6.5L0 6.5L0 9.5Z"/>
+  </symbol>
+</svg>

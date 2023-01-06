@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: Montserrat;
+  outline: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-width: 320px;
+  scroll-behavior: smooth;
+ }
+
+body {
+  line-height: 1;
+  position: relative;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-size: inherit;
+  min-height: 100vh;
+  background-color: var(--color-3);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+[class*="__container"] {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+[class*="__parrent"] {
+  width: 100%;
+  max-width: 1660px;
+  margin: 0 auto;
+}
