@@ -2,7 +2,7 @@ import React from 'react';
 import './burger-menu.scss';
 
 export function BurgerMenu({setOpenClass, addOpenClass}) {
-  const addShowClass = (state) => state ? 'open' : '';
+  const addShowClass = (open) => open ? 'open' : '';
 
   return (
     <svg className={`${'burger-menu-wrapper'} ${addShowClass(addOpenClass)}`} viewBox="0 0 100 100" onClick={setOpenClass}>

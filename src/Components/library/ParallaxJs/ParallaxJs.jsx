@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import Parallax from 'parallax-js';
 import "./parallax-styles.scss";
 
-export function ParallaxJs({loadItem}) {
+export function ParallaxJs() {
   const sceneEl = useRef(null);
   
   useEffect(() => {
@@ -15,11 +15,11 @@ export function ParallaxJs({loadItem}) {
 
   return (
     <div className="parallax-js-content" ref={sceneEl}>
-      <img src="./img/home_page/leaf_1.png" alt="Leaf" className="leaf --i-1 preload" data-depth="0.3" onLoad={loadItem}/>
-      <img src="./img/home_page/leaf_2.png" alt="Leaf" className="leaf --i-2 preload" data-depth="-0.7" onLoad={loadItem}/>
-      <img src="./img/home_page/leaf_3.png" alt="Leaf" className="leaf --i-3 preload" data-depth="0.65" onLoad={loadItem}/>
-      <img src="./img/home_page/leaf_4.png" alt="Leaf" className="leaf --i-4 preload" data-depth="0.15" onLoad={loadItem}/>
-      <img src="./img/home_page/leaf_5.png" alt="Leaf" className="leaf --i-5 preload" data-depth="-0.45" onLoad={loadItem}/>
+      <img src="./img/demo-1/leaf_1.webp" alt="Leaf" className="leaf --i-1" data-depth="0.3" />
+      <img src="./img/demo-1/leaf_2.webp" alt="Leaf" className="leaf --i-2" data-depth="-0.7" />
+      <img src="./img/demo-1/leaf_3.webp" alt="Leaf" className="leaf --i-3" data-depth="0.65" />
+      <img src="./img/demo-1/leaf_4.webp" alt="Leaf" className="leaf --i-4" data-depth="0.15" />
+      <img src="./img/demo-1/leaf_5.webp" alt="Leaf" className="leaf --i-5" data-depth="-0.45" />
     </div>
   )
 }

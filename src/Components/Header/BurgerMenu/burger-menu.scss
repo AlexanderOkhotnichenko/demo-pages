@@ -1,12 +1,17 @@
 .burger-menu-wrapper {
-  width: 55px;
+  background-color: var(--color-1);
+  border-radius: 100%;
+  padding: 10px 0;
+  width: 75px;
+  height: 75px;
   position: relative;
+  z-index: 2;
   -webkit-tap-highlight-color: transparent;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  display: none;
+  display: block;
   cursor: pointer;
   .top {
     stroke-dasharray: 40 130;
@@ -33,15 +38,9 @@
 }
 
 .burger-menu-line {
-  fill:none;
+  fill: none;
   transition: stroke-dasharray var(--speed-05), stroke-dashoffset var(--speed-05);
-  stroke: var(--color-2);
+  stroke: var(--color-8);
   stroke-width: 5.5;
-  stroke-linecap:round;
-}
-
-@media (max-width: 990px) {
-  .burger-menu-wrapper {
-    display: flex;
-  }
+  stroke-linecap: round;
 }

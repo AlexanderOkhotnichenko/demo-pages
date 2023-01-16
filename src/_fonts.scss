@@ -38,6 +38,15 @@
   font-family: Poppins;
   font-display: swap;
   font-style: normal;
+  font-weight: 300;
+  src: url("./fonts/Poppins-ExtraLight.woff2"),
+       url("./fonts/Poppins-ExtraLight.woff");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-display: swap;
+  font-style: normal;
   font-weight: 500;
   src: url("./fonts/Poppins-Medium.woff2"),
        url("./fonts/Poppins-Medium.woff");

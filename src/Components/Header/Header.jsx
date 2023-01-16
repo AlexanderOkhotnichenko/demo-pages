@@ -1,37 +1,89 @@
-import React, { useLayoutEffect } from 'react';
-import { gsap, Expo } from "gsap";
+import React, { useLayoutEffect, useState } from 'react';
+import { gsap, Power2, Back, Sine } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
-import { Content } from '../Content/Content';
+import { Content } from '../Content';
 import { Navbar } from './Navbar';
 import { BurgerMenu } from './BurgerMenu';
-import styles from './styles.module.scss';
+import { Socialbar } from './Socialbar';
+import { SiNutanix } from "react-icons/si";
+import header from './header.module.scss';
+import socialbar from "./Socialbar/socialbar.module.scss";
 
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export function Header() {
-   useLayoutEffect(() => {
+  const [open, setOpen] = useState(false);
+
+  const getState = () => setOpen(!open);
+
+  const removeClass = () => setOpen(false);
+
+  useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.from(`${styles.content__logo}`, {
-        x: -20,
+      let tl = gsap.timeline();
+
+      tl.fromTo(`.${header.header}`, {
+        delay: 0.3,
+        duration: 1,
         opacity: 0,
-        ease: Expo.ease,
-        scrollTrigger: {
-          trigger: ".styles_content__logo__LSUTH",
-          toggleActions: 'play none none none'
-        }
-      });
+        left: '-5%',
+        ease: Sine.easeOut
+      }, {
+        duration: 1,
+        left: 0,
+        opacity: 1,
+        ease: Back.easeOut
+      })
+      tl.fromTo(`.${header.header__line}`, {
+        duration: 1,
+        opacity: 0,
+        height: 0,
+        ease: Power2.easeOut
+      }, {
+        duration: 1,
+        opacity: 1,
+        height: '100%',
+        ease: Power2.easeOut
+      })
+      .from(`.${header.logo}`, {
+        duration: 0.8,
+        opacity: 0,
+        scale: 1.5,
+        ease: Back.easeOut
+      })
+      .from('.burger-menu-wrapper', {
+        duration: 0.8,
+        opacity: 0,
+        scale: 1.5,
+        ease: Back.easeOut
+      }, "-=0.7")
+      .from(`.${socialbar.socialbar__link}.--i-1`, {
+        duration: 0.8,
+        opacity: 0,
+        scale: 1.5,
+        ease: Back.easeOut
+      }, "-=0.7")
+      .from(`.${socialbar.socialbar__link}.--i-2`, {
+        duration: 0.8,
+        opacity: 0,
+        scale: 1.5,
+        ease: Back.easeOut
+      }, "-=0.7")
+      
     });
     return () => ctx.revert();
   });
 
   return (
-    <header className={styles.header}>
-      <div className={styles.header__container}>
-        <Content className={`${styles.header__content} ${styles.content}`}>
-          <Link to="/" className={styles.logo}>DEMO PAGES</Link>
-          <Navbar />
-          <BurgerMenu />
+    <header className={header.header}>
+      <div className={header.header__container}>
+        <Content className={`${header.header__content} ${header.content}`}>
+          <span className={header.header__line}></span>
+          <Link to="/" className={header.logo}><SiNutanix /></Link>
+          <Navbar openMenu={open} removeOpenClass={removeClass} />
+          <BurgerMenu setOpenClass={getState} addOpenClass={open} />
+          <Socialbar />
         </Content>
       </div>
     </header>

@@ -1,17 +1,18 @@
 import React from "react";
-import { Circles } from "react-loader-spinner";
+import { BallTriangle } from "react-loader-spinner";
 import "./loading-styles.scss";
 
 export function Loading() {
   return (
     <div className="loading">
-      <Circles
-        height="200"
-        width="200"
-        color="#4fc3f7"
-        ariaLabel="circles-loading"
-        wrapperStyle={{}}
+      <BallTriangle
+        height={180}
+        width={180}
+        radius={5}
+        color="#AECD31"
+        ariaLabel="ball-triangle-loading"
         wrapperClass="loading-circle"
+        wrapperStyle=""
         visible={true}
       />
     </div>
