@@ -54,10 +54,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 258px;
-  min-height: 550px;
-  max-height: 550px;
+  height: 550px;
   object-fit: cover;
   z-index: 10;
+  display: block;
 }
 
 .slide-desc-box {
@@ -179,57 +179,80 @@
 }
 
 @media (max-width: 960px) {
+  .slider {
+    padding: 0;
+  }
+  .slide-content {
+    display: flex;
+    gap: 40px;
+  }
+  .swiper-pagination {
+    .swiper-pagination-current {
+      font-size: 40px;
+    }
+  }
   .swiper-slide {
     display: flex;
     min-height: 100%;
     padding-top: 50px;
     column-gap: 10px;
   }
-  .slide-preview-image,
-  .slide-desc-box,
-  .slide-desc-wrapper {
-    position: static;
-  }
-  .slide-desc-wrapper {
-    width: 100%;
-    max-width: 410px;
+  .slide-preview-image {
+    position: relative;
+    height: 450px;
+    top: 230px;
+    left: 15%;
   }
   .slide-desc-box {
     display: flex;
     flex-direction: column;
+    gap: 15px;
+    position: static;
     transform: none;
-    justify-content: center;
-    gap: 20px;
+    padding-top: 100px;
   }
-
+  .slide-desc-wrapper {
+    width: 100%;
+    max-width: 400px;
+    position: static;
+  }
   .slide-preview-title.--i-1 {
-    font-size: calc(60px + 40 * (100vw / 1440));
-    line-height: 80px;
+    line-height: normal;
     text-align: start;
-  }
-  .swiper-pagination {
-    top: 50px;
-    right: 0;
+    font-size: calc(60px + 40 * (100vw / 1600));
   }
 }
 
 @media (max-width: 769px) {
+  .swiper-pagination {
+    top: 70px;
+  }
   .slider {
     padding: 0;
   }
 }
 
-@media (max-width: 670px) {
-  .slide-preview-image {
-    height: 450px;
+@media (max-width: 671px) {
+  .slider-slide {
+    padding: 0;
   }
-  .swiper-pagination {
-    .swiper-pagination-current {
-      font-size: 40px;
-    }
-    .swiper-pagination-total {
-      font-size: 16px;
-    }
+  .slide-content {
+    flex-direction: column;
+  }
+  .slide-preview-image {
+    object-fit: contain;
+    position: absolute;
+    height: 350px;
+    left: 50%;
+  }
+  .slide-desc-box {
+    padding-top: 380px;
+    // padding: 0;
+    align-items: center;
+  }
+  .slide-desc-wrapper {
+    margin-top: 10px;
+    max-width: 400px;
   }
 }
 
@@ -237,9 +260,6 @@
   .swiper-slide {
     flex-direction: column;
     align-items: center;
-  }
-  .slide-preview-image {
-    height: 60vh;
   }
   .slide-desc-box {
     > * {
@@ -256,6 +276,9 @@
 }
 
 @media (max-width: 415px) {
+  .slider-slide {
+    padding: 0;
+  }
   .slide-preview-title {
     &.--i-1 {
       font-size: calc(50px + 20 * (100vw / 1440));

@@ -16,3 +16,18 @@
     }
   }
 }
+
+@media (max-width: 671px) {
+  .socialbar {
+    flex-direction: row;
+    padding: 0;
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 415px) {
+  .socialbar {
+    order: 1;
+    padding-right: 15px;
+  }
+}

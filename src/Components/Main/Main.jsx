@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route, Navigate } from "react-router-dom";
 import { CatallogPage } from "../../pages/CatallogPage";
 import { NotFoundPage } from "../../pages/NotFoundPage";
-import { ContactPage } from "../../pages/ContactPage"
+import { ContactPage } from "../../pages/ContactPage";
 import { DemoOne } from '../DemoOne';
 import { DemoTwo } from '../DemoTwo/DemoTwo';
 import main from "./main.module.scss";

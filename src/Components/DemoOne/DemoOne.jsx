@@ -9,12 +9,16 @@ export function DemoOne() {
   const API_URL = process.env.REACT_APP_MOCKAPI_API_URL;
 
   useEffect(() => {
-    async function fetchData() {
-      const juicesItems = await axios.get(`${API_URL}`);
-      setLoading(false)
-      setJuices(juicesItems.data);
+    try {
+      async function fetchData() {
+        const juicesItems = await axios.get(`${API_URL}/demo-1`);
+        setLoading(false);
+        setJuices(juicesItems.data);
+      }
+      fetchData();
+    } catch (error) {
+      console.log(error);
     }
-    fetchData();
   }, []);
 
   return (

@@ -110,7 +110,7 @@ export function Footer() {
             </div>
           </BoxContent>
           <BoxContent className={`${footer.box} ${footer.getstart}`}>
-            <h2 className='t'>{textGetStart}</h2>
+            <h2>{textGetStart}</h2>
             <p>{textGetStartDescription}</p>
             <div className={footer.wrLink}>
               <Link to="contact"><span>{textGetStartLink}</span></Link>

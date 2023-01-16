@@ -44,3 +44,17 @@
   stroke-width: 5.5;
   stroke-linecap: round;
 }
+
+@media (max-width: 671px) {
+  .burger-menu-wrapper {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 415px) {
+  .burger-menu-wrapper {
+    order: 2;
+  }
+}

@@ -3,8 +3,8 @@
   font-display: swap;
   font-style: normal;
   font-weight: 300;
-  src: url("./fonts/Montserrat-Light.woff2"),
-       url("./fonts/Montserrat-Light.woff");
+  src: url("./fonts/Montserrat-Light.woff2") format('woff2'),
+       url("./fonts/Montserrat-Light.woff") format('woff');
 }
 
 @font-face {
@@ -12,8 +12,8 @@
   font-display: swap;
   font-style: normal;
   font-weight: 400;
-  src: url("./fonts/Montserrat-Regular.woff2"),
-       url("./fonts/Montserrat-Regular.woff");
+  src: url("./fonts/Montserrat-Regular.woff2") format('woff2'),
+       url("./fonts/Montserrat-Regular.woff") format('woff');
 }
 
 @font-face {
@@ -21,8 +21,8 @@
   font-display: swap;
   font-style: normal;
   font-weight: 500;
-  src: url("./fonts/Montserrat-Medium.woff2"),
-       url("./fonts/Montserrat-Medium.woff");
+  src: url("./fonts/Montserrat-Medium.woff2") format('woff2'),
+       url("./fonts/Montserrat-Medium.woff") format('woff');
 }
 
 @font-face {
@@ -30,8 +30,17 @@
   font-display: swap;
   font-style: normal;
   font-weight: 600;
-  src: url("./fonts/Montserrat-SemiBold.woff2"),
-       url("./fonts/Montserrat-SemiBold.woff");
+  src: url("./fonts/Montserrat-SemiBold.woff2") format('woff2'),
+       url("./fonts/Montserrat-SemiBold.woff") format('woff');
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/Montserrat-ExtraBold.woff2") format('woff2'),
+       url("./fonts/Montserrat-ExtraBold.woff2") format('woff');
 }
 
 @font-face {
@@ -39,15 +48,43 @@
   font-display: swap;
   font-style: normal;
   font-weight: 300;
-  src: url("./fonts/Poppins-ExtraLight.woff2"),
-       url("./fonts/Poppins-ExtraLight.woff");
+  src: url("./fonts/Poppins-ExtraLight.woff2") format('woff2'),
+       url("./fonts/Poppins-ExtraLight.woff") format('woff');
 }
 
 @font-face {
   font-family: Poppins;
   font-display: swap;
   font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/Poppins-Regular.woff2") format('woff2'),
+       url("./fonts/Poppins-Regular.woff") format('woff');
+}
+
+
+@font-face {
+  font-family: Poppins;
+  font-display: swap;
+  font-style: normal;
   font-weight: 500;
-  src: url("./fonts/Poppins-Medium.woff2"),
-       url("./fonts/Poppins-Medium.woff");
+  src: url("./fonts/Poppins-Medium.woff2") format('woff2'),
+       url("./fonts/Poppins-Medium.woff") format('woff');
+}
+
+@font-face {
+  font-family: Poppins;
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/Poppins-SemiBold.woff2") format('woff2'),
+       url("./fonts/Poppins-SemiBold.woff") format('woff');
+}
+
+@font-face {
+  font-family: Poppins;
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/Poppins-Bold.woff2") format('woff2'),
+       url("./fonts/Poppins-Bold.woff") format('woff');
 }

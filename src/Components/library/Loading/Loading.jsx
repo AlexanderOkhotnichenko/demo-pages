@@ -15,6 +15,14 @@ export function Loading() {
         wrapperStyle=""
         visible={true}
       />
+      <div className="text-loading">
+        Loading
+        <div className="loading-points">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </div>
   );
 }

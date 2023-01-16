@@ -93,9 +93,9 @@ export function Slider({ juices = [], loading }) {
         },
       });
 
-      gsap.set(".slide-preview-image", { 
-        yPercent: -22, 
-        xPercent: -50 
+      gsap.set(".slide-preview-image", {
+        yPercent: -22,
+        xPercent: -50
       });
 
       gsap.timeline().from(".slide-preview-image", {
@@ -114,7 +114,7 @@ export function Slider({ juices = [], loading }) {
       });
   
       gsap.from(".leaf.--i-1", {
-        delay: 2,
+        delay: 2.5,
         duration: 1,
         opacity: 0,
         y: -400,
@@ -126,7 +126,7 @@ export function Slider({ juices = [], loading }) {
       })
   
       gsap.from(".leaf.--i-2", {
-        delay: 2.1,
+        delay: 2.6,
         duration: 1,
         opacity: 0,
         y: -500,
@@ -138,7 +138,7 @@ export function Slider({ juices = [], loading }) {
       })
   
       gsap.from(".leaf.--i-3", {
-        delay: 2.2,
+        delay: 2.7,
         duration: 1,
         opacity: 0,
         y: -600,
@@ -150,7 +150,7 @@ export function Slider({ juices = [], loading }) {
       })
   
       gsap.from(".leaf.--i-4", {
-        delay: 2.3,
+        delay: 2.8,
         opacity: 0,
         duration: 1,
         y: -700,
@@ -162,7 +162,7 @@ export function Slider({ juices = [], loading }) {
       })
   
       gsap.from(".leaf.--i-5", {
-        delay: 2.4,
+        delay: 2.9,
         duration: 1,
         opacity: 0,
         y: -800,
@@ -299,7 +299,7 @@ export function Slider({ juices = [], loading }) {
     setTimeout(() => {
       buttonPrevRef.current.disabled = false;
       buttonNextRef.current.disabled = false;
-    }, 1500);
+    }, 2200);
   }
 
   return (

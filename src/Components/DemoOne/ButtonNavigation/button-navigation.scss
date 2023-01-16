@@ -104,18 +104,39 @@
 }
 
 @media (max-width: 769px) {
+  .custom-button-prev,
+  .custom-button-next {
+    top: 15%;
+  }
+
   .custom-button-prev {
-    left: 5px;
+    left: 37%;
   }
 
   .custom-button-next {
-    right: 5px;
+    left: 50%;
   }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 671px) {
   .custom-button-prev,
   .custom-button-next {
     top: 40%;
+  }
+  .custom-button-prev {
+    left: 20px;
+  }
+  .custom-button-next {
+    left: inherit;
+    right: 20px;
+  }
+}
+
+@media (max-width: 415px) {
+  .custom-button-prev {
+    left: 10px;
+  }
+  .custom-button-next {
+    right: 10px;
   }
 }

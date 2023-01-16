@@ -7,23 +7,72 @@
   min-height: 500px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
+  gap: 40px;
 }
 
-.loading-circle {
-  animation: visible 1s forwards infinite;
-  @keyframes visible {
+.text-loading {
+  color: var(--color-2);
+  display: flex;
+  column-gap: 5px;
+  font-size: 35px;
+  font-family: Poppins;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.loading-points {
+  > *:not(:last-child) {
+    margin-right: 5px;
+  }
+  span:first-child {
+    animation: flicker-1 1.2s forwards infinite linear;
+  }
+  span:nth-child(2) {
+    animation: flicker-2 1.2s forwards infinite linear 0.3s;
+  }
+  span:last-child {
+    animation: flicker-3 1.2s forwards infinite linear 0.6s;
+  }
+  span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: var(--color-2);
+    border-radius: 50%;
+  }
+  @keyframes flicker-1 {
     0% {
       opacity: 1;
-      transform: scale(1);
     }
     50% {
-      opacity: 0.6;
-      transform: scale(1.1);
+      opacity: 0.3;
     }
     100% {
       opacity: 1;
-      transform: scale(1);
+    }
+  }
+  @keyframes flicker-2 {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker-3 {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 1;
     }
   }
 }

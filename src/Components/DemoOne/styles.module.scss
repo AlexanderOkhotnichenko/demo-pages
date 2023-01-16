@@ -15,10 +15,7 @@
 }
 
 @media (max-width: 415px) {
-  .home {
-    padding-top: 75px;
-    &__container {
-      padding: 0 15px !important;
-    }
+  .home__container {
+    padding: 0 15px !important;
   }
 }

@@ -62,3 +62,25 @@
     }
   }
 }
+
+@media (max-width: 415px) {
+  .parallax-js-content {
+    .--i-1 {
+      width: 90px;
+      height: 67px;
+    }
+    .--i-2 {
+      width: 100px;
+      height: 99px;
+    }
+    .--i-3 {
+      width: 140px;
+      height: 70px;
+    }
+    .--i-5 {
+      width: 95px;
+      height: 85px;
+      left: 15% !important;
+    }
+  }
+}
