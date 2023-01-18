@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/demo-pages/static/css/main.c4f9d1d8.css",
-    "main.js": "/demo-pages/static/js/main.44b94d14.js",
+    "main.css": "/demo-pages/static/css/main.c741437d.css",
+    "main.js": "/demo-pages/static/js/main.dc2834d0.js",
     "static/media/Poppins-ExtraLight.woff2": "/demo-pages/static/media/Poppins-ExtraLight.25cf04acbb4140875dc5.woff2",
     "static/media/Poppins-Regular.woff2": "/demo-pages/static/media/Poppins-Regular.a0d979a31236cb0771a2.woff2",
     "static/media/Poppins-SemiBold.woff2": "/demo-pages/static/media/Poppins-SemiBold.eb4a420b67ccce071ad2.woff2",
@@ -22,11 +22,11 @@
     "static/media/Poppins-SemiBold.woff": "/demo-pages/static/media/Poppins-SemiBold.b5329103e193298fe15e.woff",
     "static/media/Poppins-Medium.woff2": "/demo-pages/static/media/Poppins-Medium.4c53206da966f2d93e87.woff2",
     "index.html": "/demo-pages/index.html",
-    "main.c4f9d1d8.css.map": "/demo-pages/static/css/main.c4f9d1d8.css.map",
-    "main.44b94d14.js.map": "/demo-pages/static/js/main.44b94d14.js.map"
+    "main.c741437d.css.map": "/demo-pages/static/css/main.c741437d.css.map",
+    "main.dc2834d0.js.map": "/demo-pages/static/js/main.dc2834d0.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4f9d1d8.css",
-    "static/js/main.44b94d14.js"
+    "static/css/main.c741437d.css",
+    "static/js/main.dc2834d0.js"
   ]
 }
