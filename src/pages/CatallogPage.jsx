@@ -1,5 +1,5 @@
 import React from "react";
-import { Catallog } from "../Components/Catallog";
+import { Catallog } from "../ui/Catallog";
 
 export function CatallogPage() {
   return (

@@ -1,11 +1,11 @@
 import React from "react";
-import { Auth } from "../Components/Contact";
-import auth from "../Components/Contact/auth.module.scss";
+import { Contact } from "../ui/Contact/Contact";
+import contact from "../styles/contact.module.scss";
 
 export function ContactPage() {
   return (
-    <section className={auth.auth}>
-      <Auth />
+    <section className={contact.auth}>
+      {/* <Contact /> */}
     </section>
   );
 }

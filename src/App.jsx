@@ -1,12 +1,12 @@
 import React from "react";
-import { Header } from "./Components/Header";
-import { Main } from "./Components/Main";
-import { Footer } from "./Components/Footer";
-import styles from "./App.module.scss";
+import { Header } from "./ui/Header";
+import { Main } from "./ui/Main";
+import { Footer } from "./ui/Footer";
+import "./App.scss";
 
 function App() {
   return (
-    <div className={styles.App}>
+    <div className="App">
       <Header />
       <Main />
       <Footer />

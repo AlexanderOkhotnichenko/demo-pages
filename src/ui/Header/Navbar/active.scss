@@ -1,0 +1,8 @@
+.navbar_menu__link__kiBWs.active {
+  color: var(--color-6);
+  &::before {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+}

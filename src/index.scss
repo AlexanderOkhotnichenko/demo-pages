@@ -2,22 +2,3 @@
 @import "./fonts";
 @import "./varieble";
 @import "./vendor";
-
-.development {
-  padding-top: 80px;
-  height: calc(100vh - 80px);
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  flex-direction: column;
-  gap: 30px;
-  h1 {
-    text-transform: uppercase;
-  }
-  img {
-    display: block;
-    width: 600px;
-    height: 50vh;
-    object-fit: cover;
-  }
-}
