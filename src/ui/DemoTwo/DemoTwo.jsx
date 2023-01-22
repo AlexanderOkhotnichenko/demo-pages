@@ -1,12 +1,17 @@
-import React, { useLayoutEffect } from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from 'react-router-dom';
+import { Content } from "../../Components/Content";
+import { Loading } from '../../library/Loading';
+import { randomNumber } from "../../Components/randomNumber";
 import demoTwo from "../../styles/demo-two.module.scss";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export function DemoTwo() {
+  const [loading , setLoading] = useState(true);
+
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       let timeline = gsap.timeline({delay: 0.5});
@@ -235,75 +240,85 @@ export function DemoTwo() {
     return () => ctx.revert();
   });
 
+  setTimeout(() => {
+    setLoading(false);
+  }, `${randomNumber(1,5)}000`);
+  
   return (
-    <section className={`${demoTwo.demoTwo} ${demoTwo.font}`}>
-      <div className={demoTwo.demoTwo__container}>
-        <div className={`${demoTwo.demoTwo__content} ${demoTwo.content}`}>
-          <div className={demoTwo.content__wrapper}>
-            <div className={demoTwo.content__box}>
-              <div className={demoTwo.content__content_bubbles}>
-                <div className={`${demoTwo.content__content_bubbles__bubble} ${demoTwo.i_1}`}></div>
-                <div className={`${demoTwo.content__content_bubbles__bubble} ${demoTwo.i_6}`}></div>
-                <div className={`${demoTwo.content__content_bubbles__bubble} ${demoTwo.i_3}`}></div>
-                <div className={`${demoTwo.content__content_bubbles__bubble} ${demoTwo.i_4}`}></div>
-                <div className={`${demoTwo.content__content_bubbles__bubble} ${demoTwo.i_5}`}></div>
-              </div>
-              <div className={demoTwo.content__content_buttle}>
-                <img src="./img/demo-2/bottle.png" alt="Bottle" />
-              </div>
-            </div>
-            <div className={demoTwo.content__box}>
-              <div className={demoTwo.content__content_description}>
-                <h3>Smoothies</h3>
-                <h1>Tropical Kiwi Mix</h1>
-                <p>This fresh-flavored smoothie can start a day out right or perk up  an afternoon</p>
-              </div>
-              <div className={demoTwo.content__content_mass}>
-                <div className={`${demoTwo.content__content_mass_row} ${demoTwo.i_1}`}>
-                  <span>Contents:</span>
-                  <span>Nutritional values:</span>
+    <>
+      {
+        loading
+        ? <Loading />
+        : <section className={`${demoTwo.demoTwo} ${demoTwo.font}`} data-scroll-section>
+          <div className={demoTwo.demoTwo__container}>
+            <Content className={`${demoTwo.demoTwo__content} ${demoTwo.content}`}>
+              <div className={demoTwo.content__wrapper}>
+                <div className={demoTwo.content__box}>
+                  <div className={demoTwo.content__content_bubbles}>
+                    <div className={`${demoTwo.content__content_bubbles__bubble} ${demoTwo.i_1}`}></div>
+                    <div className={`${demoTwo.content__content_bubbles__bubble} ${demoTwo.i_6}`}></div>
+                    <div className={`${demoTwo.content__content_bubbles__bubble} ${demoTwo.i_3}`}></div>
+                    <div className={`${demoTwo.content__content_bubbles__bubble} ${demoTwo.i_4}`}></div>
+                    <div className={`${demoTwo.content__content_bubbles__bubble} ${demoTwo.i_5}`}></div>
+                  </div>
+                  <div className={demoTwo.content__content_buttle}>
+                    <img src="./img/demo-2/bottle.png" alt="Bottle" />
+                  </div>
                 </div>
-                <div className={`${demoTwo.content__content_mass_row} ${demoTwo.i_2}`}>
-                  <div className={demoTwo.content__content_mass_products}>
-                    <div className={demoTwo.content__content_mass_products__item}>
-                      <img src="./img/demo-2/kiwi.png" alt="Kiwi" />
+                <div className={demoTwo.content__box}>
+                  <div className={demoTwo.content__content_description}>
+                    <h3>Smoothies</h3>
+                    <h1>Tropical Kiwi Mix</h1>
+                    <p>This fresh-flavored smoothie can start a day out right or perk up  an afternoon</p>
+                  </div>
+                  <div className={demoTwo.content__content_mass}>
+                    <div className={`${demoTwo.content__content_mass_row} ${demoTwo.i_1}`}>
+                      <span>Contents:</span>
+                      <span>Nutritional values:</span>
                     </div>
-                    <div className={demoTwo.content__content_mass_products__item}>
-                      <img src="./img/demo-2/banana.png" alt="Banana" />
-                    </div>
-                    <div className={demoTwo.content__content_mass_products__item}>
-                      <img src="./img/demo-2/cherry.png" alt="Cherry" />
-                    </div>
-                    <div className={demoTwo.content__content_mass_products__item}>
-                      <img src="./img/demo-2/avocado.png" alt="Avocado" />
+                    <div className={`${demoTwo.content__content_mass_row} ${demoTwo.i_2}`}>
+                      <div className={demoTwo.content__content_mass_products}>
+                        <div className={demoTwo.content__content_mass_products__item}>
+                          <img src="./img/demo-2/kiwi.png" alt="Kiwi" />
+                        </div>
+                        <div className={demoTwo.content__content_mass_products__item}>
+                          <img src="./img/demo-2/banana.png" alt="Banana" />
+                        </div>
+                        <div className={demoTwo.content__content_mass_products__item}>
+                          <img src="./img/demo-2/cherry.png" alt="Cherry" />
+                        </div>
+                        <div className={demoTwo.content__content_mass_products__item}>
+                          <img src="./img/demo-2/avocado.png" alt="Avocado" />
+                        </div>
+                      </div>
+                      <span className={demoTwo.content__content_mass_row_media}>Nutritional values:</span>
+                      <table className={demoTwo.content__content_mass_table}>
+                        <tbody className={demoTwo.content__content_mass_table__body}>
+                          <tr className={`${demoTwo.content__content_mass_table__tr} ${demoTwo.i_1}`}>
+                            <td className={demoTwo.content__content_mass_table__td}>196</td>
+                            <td className={demoTwo.content__content_mass_table__td}>1g</td>
+                            <td className={demoTwo.content__content_mass_table__td}>46g</td>
+                            <td className={demoTwo.content__content_mass_table__td}>5g</td>
+                          </tr>
+                          <tr className={`${demoTwo.content__content_mass_table__tr} ${demoTwo.i_3}`}>
+                            <td className={demoTwo.content__content_mass_table__td}>kcal</td>
+                            <td className={demoTwo.content__content_mass_table__td}>fats</td>
+                            <td className={demoTwo.content__content_mass_table__td}>carbohydrates</td>
+                            <td className={demoTwo.content__content_mass_table__td}>protein</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
-                  <span className={demoTwo.content__content_mass_row_media}>Nutritional values:</span>
-                  <table className={demoTwo.content__content_mass_table}>
-                    <tbody className={demoTwo.content__content_mass_table__body}>
-                      <tr className={`${demoTwo.content__content_mass_table__tr} ${demoTwo.i_1}`}>
-                        <td className={demoTwo.content__content_mass_table__td}>196</td>
-                        <td className={demoTwo.content__content_mass_table__td}>1g</td>
-                        <td className={demoTwo.content__content_mass_table__td}>46g</td>
-                        <td className={demoTwo.content__content_mass_table__td}>5g</td>
-                      </tr>
-                      <tr className={`${demoTwo.content__content_mass_table__tr} ${demoTwo.i_3}`}>
-                        <td className={demoTwo.content__content_mass_table__td}>kcal</td>
-                        <td className={demoTwo.content__content_mass_table__td}>fats</td>
-                        <td className={demoTwo.content__content_mass_table__td}>carbohydrates</td>
-                        <td className={demoTwo.content__content_mass_table__td}>protein</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <Link to="#" className={demoTwo.content__content_link}>
+                    <span>Order now</span>
+                  </Link>
                 </div>
               </div>
-              <Link to="#" className={demoTwo.content__content_link}>
-                <span>Order now</span>
-              </Link>
-            </div>
+            </Content>
           </div>
-        </div>
-      </div>
-    </section>
+          </section>
+      }
+    </>
   )
 }

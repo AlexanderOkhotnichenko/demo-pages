@@ -4,7 +4,7 @@ import "./loading-styles.scss";
 
 export function Loading() {
   return (
-    <div className="loading">
+    <div className="loading" data-scroll-section>
       <BallTriangle
         height={180}
         width={180}

@@ -35,7 +35,7 @@ export function Catallog() {
   };
 
   return (
-    <section className={catallog.catallog}>
+    <section className={catallog.catallog} data-scroll-section>
       <div className={catallog.catallog__container}>
         <Content className={`${catallog.catallog__content} ${catallog.content}`}>
           {renderCards()}

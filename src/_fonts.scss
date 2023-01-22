@@ -88,3 +88,21 @@
   src: url("./fonts/Poppins-Bold.woff2") format('woff2'),
        url("./fonts/Poppins-Bold.woff") format('woff');
 }
+
+@font-face {
+  font-family: Pacifico;
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/Pacifico-Regular.woff2") format('woff2'),
+       url("./fonts/Pacifico-Regular.woff") format('woff');
+}
+
+@font-face {
+  font-family: Open-Sans;
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/OpenSans-SemiBold.woff2") format('woff2'),
+       url("./fonts/OpenSans-SemiBold.woff") format('woff');
+}

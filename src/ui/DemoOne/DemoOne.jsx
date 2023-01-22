@@ -22,7 +22,7 @@ export function DemoOne() {
   }, []);
 
   return (
-    <section className={`${demoOne.home} home__parrent`}>
+    <section className={`${demoOne.home} home__parrent`} data-scroll-section>
       <div className={`${demoOne.home__container} gsap-home-container`}>
         <div className={`${demoOne.home__content} ${demoOne.content}`}>
           <Slider juices={juices} loading={loading} />

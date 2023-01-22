@@ -2,6 +2,6 @@ import React from "react";
 
 export function NotFoundPage() {
   return (
-    <div>404</div>
+    <div data-scroll-section>404</div>
   );
 }

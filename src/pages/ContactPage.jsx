@@ -4,7 +4,7 @@ import contact from "../styles/contact.module.scss";
 
 export function ContactPage() {
   return (
-    <section className={contact.auth}>
+    <section className={contact.auth} data-scroll-section>
       {/* <Contact /> */}
     </section>
   );
