@@ -2,7 +2,6 @@ import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { CatallogPage } from "../../pages/CatallogPage";
 import { NotFoundPage } from "../../pages/NotFoundPage";
-import { ContactPage } from "../../pages/ContactPage";
 import { DemoOne } from "../DemoOne";
 import { DemoTwo } from "../DemoTwo";
 import { DemoThree } from "../DemoThree";
@@ -24,7 +23,6 @@ export function Main() {
           <Route path="catallog/demo-2" element={<DemoTwo />} />
           <Route path="catallog/demo-3" element={<DemoThree />} />
           <Route path="catallog/demo-4" element={<DemoFour />} />
-          <Route path="contact" element={<ContactPage />} />
           <Route path="404" element={<NotFoundPage />} />
           <Route path="*" element={<Navigate to="404" />} />
         </Routes>

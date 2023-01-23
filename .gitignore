@@ -4,6 +4,9 @@
 /.pnp
 .pnp.js
 .env
+package.json
+package-lokck.json
+.gitignore
 
 # testing
 /coverage
