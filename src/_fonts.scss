@@ -106,3 +106,21 @@
   src: url("./fonts/OpenSans-SemiBold.woff2") format('woff2'),
        url("./fonts/OpenSans-SemiBold.woff") format('woff');
 }
+
+@font-face {
+  font-family: Antic Didone;
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/AnticDidone-Regular.woff2") format('woff2'),
+       url("./fonts/AnticDidone-Regular.woff") format('woff');
+}
+
+@font-face {
+  font-family: BlackOpsOne;
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/BlackOpsOne-Regular.woff2") format('woff2'),
+       url("./fonts/BlackOpsOne-Regular.woff") format('woff');
+}

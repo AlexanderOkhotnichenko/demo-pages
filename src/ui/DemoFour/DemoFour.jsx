@@ -1,36 +1,45 @@
-import React from "react";
-import "../../styles/demo-four.scss";
+import React, { useState, useRef } from "react";
+
+import { useLocoScroll } from "../../hooks/useLocoScroll";
+import { useGSAPAnimation } from "./useGSAPAnimation";
+import { Loading } from "../../library/Loading";
+import { randomNumber } from "../../Components/randomNumber";
+import { Home } from "./Home";
+import { About } from "./About";
+import { Banner } from "./Banner";
+import { Finish } from "./Finish/Finish";
+import demoFour from "../../styles/demo-four/home.module.scss";
+
 
 export function DemoFour() {
+  const [loading, setLoading] = useState(true);
+  const ref = useRef(null);
+
+  useLocoScroll(!loading);
+  useGSAPAnimation();
+
+  setTimeout(() => {
+    setLoading(false);
+  }, `${randomNumber(1, 5)}000`);
+
+
   return (
     <>
-      <section data-scroll-section="" className="s-1">
-          <span data-scroll="" data-scroll-direction="horizontal" data-scroll-delay="0.18" data-scroll-speed="6">S</span>
-          <span data-scroll="" data-scroll-direction="horizontal" data-scroll-delay="0.14" data-scroll-speed="6">e</span>
-          <span data-scroll="" data-scroll-direction="horizontal" data-scroll-delay="0.1" data-scroll-speed="6">c</span>
-          <span data-scroll="" data-scroll-direction="horizontal" data-scroll-delay="0.4" data-scroll-speed="6">t</span>
-          <span data-scroll="" data-scroll-direction="horizontal" data-scroll-delay="0.34" data-scroll-speed="6">i</span>
-          <span data-scroll="" data-scroll-direction="horizontal" data-scroll-delay="0.15" data-scroll-speed="6">o</span>
-          <span data-scroll="" data-scroll-direction="horizontal" data-scroll-delay="0.63" data-scroll-speed="6">n</span>
-      </section>
-      <section data-scroll-section="" className="s-2">
-          <span data-scroll="" data-scroll-direction="horizontal" data-scroll-delay="0.37" data-scroll-speed="-6">S</span>
-          <span data-scroll="" data-scroll-direction="horizontal" data-scroll-delay="0.26" data-scroll-speed="-6">e</span>
-          <span data-scroll="" data-scroll-direction="horizontal" data-scroll-delay="0.53" data-scroll-speed="-6">c</span>
-          <span data-scroll="" data-scroll-direction="horizontal" data-scroll-delay="0.24" data-scroll-speed="-6">t</span>
-          <span data-scroll="" data-scroll-direction="horizontal" data-scroll-delay="0.52" data-scroll-speed="-6">i</span>
-          <span data-scroll="" data-scroll-direction="horizontal" data-scroll-delay="0.15" data-scroll-speed="-6">o</span>
-          <span data-scroll="" data-scroll-direction="horizontal" data-scroll-delay="0.72" data-scroll-speed="-6">n</span>
-      </section>
-      <section data-scroll-section="" className="s-3">
-          <span data-scroll="" data-scroll-direction="horizontal" data-scroll-delay="0.37" data-scroll-speed="-6">S</span>
-          <span data-scroll="" data-scroll-direction="horizontal" data-scroll-delay="0.26" data-scroll-speed="-6">e</span>
-          <span data-scroll="" data-scroll-direction="horizontal" data-scroll-delay="0.53" data-scroll-speed="-6">c</span>
-          <span data-scroll="" data-scroll-direction="horizontal" data-scroll-delay="0.24" data-scroll-speed="-6">t</span>
-          <span data-scroll="" data-scroll-direction="horizontal" data-scroll-delay="0.52" data-scroll-speed="-6">i</span>
-          <span data-scroll="" data-scroll-direction="horizontal" data-scroll-delay="0.15" data-scroll-speed="-6">o</span>
-          <span data-scroll="" data-scroll-direction="horizontal" data-scroll-delay="0.72" data-scroll-speed="-6">n</span>
-      </section>
+      {loading ? (
+        <Loading />
+      ) : (
+        <div className={demoFour.demo_four} data-scroll-container id="main-section" ref={ref}>
+          <div className={demoFour.demo_four__container}>
+            <div className={demoFour.demo_four__overlay}>
+              <span></span>
+            </div>
+            <Home />
+            <About />
+            <Banner />
+            <Finish />
+          </div>
+        </div>
+      )}
     </>
   );
 }

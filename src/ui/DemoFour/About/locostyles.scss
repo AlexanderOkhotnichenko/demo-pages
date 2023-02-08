@@ -1,0 +1,121 @@
+.scroll-image {
+  transition: 1s linear;
+
+  svg {
+    stroke-dasharray: 1111;
+    stroke-dashoffset: 1111;
+    transition: 1.5s linear;
+    transition-delay: 1s;
+  }
+
+  img {
+    transition: 1s linear;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  &.is-reveal {
+    svg {
+      stroke-dashoffset: 0;
+    }
+
+    img {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+}
+
+.scroll-socials {
+  transform: translateX(-30px);
+  transition: var(--speed-05) cubic-bezier(0.53,-0.2, 0.37, 2);
+  opacity: 0;
+  .scroll-twitter,
+  .scroll-linkedin,
+  .scroll-instagram {
+    transition: var(--speed-05) linear 0.3s;
+  }
+
+  .scroll-twitter {
+    stroke-dasharray: 85;
+    stroke-dashoffset: 85;
+  }
+
+  .scroll-linkedin {
+    stroke-dasharray: 96;
+    stroke-dashoffset: 96;
+  }
+
+  .scroll-instagram {
+    stroke-dasharray: 201;
+    stroke-dashoffset: 201;
+  }
+
+  &.is-reveal {
+    transform: translateX(0);
+    opacity: 1;
+    .scroll-twitter,
+    .scroll-linkedin,
+    .scroll-instagram {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+.scroll-title {
+  overflow: hidden;
+
+  &::after {
+    width: 0;
+    transition: 1s linear;
+    transition-delay: 0.5s;
+  }
+  span {
+    transform: translateY(55px);
+    transition: 1s ease-in;
+  }
+  &.is-reveal {
+    &::after {
+      width: 60px;
+    }
+    span {
+      transform: translateY(0);
+    }
+  }
+}
+
+.scroll-text {
+  p {
+    transition: var(--speed-08) ease-in;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  &::before {
+    width: 0;
+    transition: 1s linear;
+    transition-delay: 0.5s;
+    transform-origin: left;
+  }
+  &.is-reveal {
+    p {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    &::before {
+      width: 60px;
+    }
+  }
+}
+
+.scroll-points {
+  opacity: 0;
+  transition: var(--speed-08) cubic-bezier(.215,.61,.355,1);
+  transform: translateY(100%) rotateX(-80deg);
+  transform-origin: center top;
+  transform-style: preserve-3d;
+  @for $i from 0 to 3 {
+    &:nth-child(#{$i + 1}) {
+      transition-delay: $i * 0.1 + 0.1s;
+    }
+  }
+  &.is-reveal {
+    transform: none;
+    opacity: 1;
+  }
+}

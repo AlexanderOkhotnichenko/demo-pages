@@ -1,0 +1,77 @@
+.scroll-subtitle {
+}
+
+.scroll-title {
+  transition: 0.8s ease-in;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  &.is-reveal {
+   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+.scroll-text {
+  transition: 1s ease-in;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  &.is-reveal {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+.scroll-plugin-title {
+  transition: 0.7s ease-in-out;
+  opacity: 0;
+  .line {
+    transition: 1s linear;
+    width: 0;
+  }
+  &.is-reveal {
+    opacity: 1;
+    .line {
+      width: 30px;
+    }
+  }
+}
+
+.scroll-plugin-text {
+  transition: 0.7s ease-in;
+  opacity: 0;
+  transform: translateY(45px);
+  &.is-reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.scroll-stack-el {
+  transition: 1s cubic-bezier(0.25, 0.1, 0.46, 1.41) 0.3s;
+  opacity: 0;
+  transform: translateY(35px);
+  @for $i from 0 to 3 {
+    &:nth-child(#{$i + 1}) {
+      transition-delay: $i * 0.1 + 0.15s;
+    }
+  }
+  &.is-reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.scroll-image-content {  
+  .scroll-item {
+    img {
+      clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    }
+  }
+  &.is-reveal {
+    .scroll-item {
+      &::before {
+        top: -100%;
+      }
+      img {
+        clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+        transform: scale(1);
+      }
+    }
+  }
+}
