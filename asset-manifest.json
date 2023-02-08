@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/demo-pages/static/css/main.b2d463f2.css",
-    "main.js": "/demo-pages/static/js/main.d7189776.js",
+    "main.css": "/demo-pages/static/css/main.82701254.css",
+    "main.js": "/demo-pages/static/js/main.7e9f57c5.js",
     "static/media/Pacifico-Regular.woff": "/demo-pages/static/media/Pacifico-Regular.02d6b15c9e719bbd81c3.woff",
     "static/media/Poppins-ExtraLight.woff2": "/demo-pages/static/media/Poppins-ExtraLight.25cf04acbb4140875dc5.woff2",
     "static/media/Poppins-Regular.woff2": "/demo-pages/static/media/Poppins-Regular.a0d979a31236cb0771a2.woff2",
@@ -18,19 +18,24 @@
     "static/media/Montserrat-Medium.woff2": "/demo-pages/static/media/Montserrat-Medium.e5f49cdf0c456cb49649.woff2",
     "static/media/Montserrat-SemiBold.woff2": "/demo-pages/static/media/Montserrat-SemiBold.79e03d9e6b3fa37c5824.woff2",
     "static/media/Montserrat-Light.woff2": "/demo-pages/static/media/Montserrat-Light.f2a173567b67cb971970.woff2",
+    "static/media/BlackOpsOne-Regular.woff": "/demo-pages/static/media/BlackOpsOne-Regular.332151ce033c19f279a4.woff",
     "static/media/OpenSans-SemiBold.woff": "/demo-pages/static/media/OpenSans-SemiBold.c7a3ffd87605fb2f5cab.woff",
     "static/media/Poppins-ExtraLight.woff": "/demo-pages/static/media/Poppins-ExtraLight.41cf96217842e115b325.woff",
     "static/media/Poppins-Regular.woff": "/demo-pages/static/media/Poppins-Regular.7d50cfcb7fdf5bd337a0.woff",
     "static/media/Poppins-Medium.woff": "/demo-pages/static/media/Poppins-Medium.feec26f7a410bc253f72.woff",
+    "static/media/background.webp": "/demo-pages/static/media/background.52c328bcf85410afd2a4.webp",
     "static/media/Poppins-Bold.woff": "/demo-pages/static/media/Poppins-Bold.125974335c0c9046c212.woff",
     "static/media/Poppins-SemiBold.woff": "/demo-pages/static/media/Poppins-SemiBold.b5329103e193298fe15e.woff",
+    "static/media/BlackOpsOne-Regular.woff2": "/demo-pages/static/media/BlackOpsOne-Regular.efc5545516fb529295e0.woff2",
     "static/media/Poppins-Medium.woff2": "/demo-pages/static/media/Poppins-Medium.4c53206da966f2d93e87.woff2",
+    "static/media/AnticDidone-Regular.woff2": "/demo-pages/static/media/AnticDidone-Regular.9251b51028d9746af7a3.woff2",
+    "static/media/AnticDidone-Regular.woff": "/demo-pages/static/media/AnticDidone-Regular.bedad02ffe8d07486f3b.woff",
     "index.html": "/demo-pages/index.html",
-    "main.b2d463f2.css.map": "/demo-pages/static/css/main.b2d463f2.css.map",
-    "main.d7189776.js.map": "/demo-pages/static/js/main.d7189776.js.map"
+    "main.82701254.css.map": "/demo-pages/static/css/main.82701254.css.map",
+    "main.7e9f57c5.js.map": "/demo-pages/static/js/main.7e9f57c5.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2d463f2.css",
-    "static/js/main.d7189776.js"
+    "static/css/main.82701254.css",
+    "static/js/main.7e9f57c5.js"
   ]
 }
