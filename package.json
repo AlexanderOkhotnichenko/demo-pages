@@ -2,7 +2,7 @@
   "name": "clean_juice",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alexanderokhotnichenko.github.io/demo-pages/",
+
   "dependencies": {
     "@hookform/resolvers": "^2.9.10",
     "@reduxjs/toolkit": "^1.9.1",
