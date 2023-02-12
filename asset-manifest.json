@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/demo-pages/static/css/main.82701254.css",
-    "main.js": "/demo-pages/static/js/main.7e9f57c5.js",
+    "main.css": "/demo-pages/static/css/main.a1267679.css",
+    "main.js": "/demo-pages/static/js/main.710ee3d0.js",
     "static/media/Pacifico-Regular.woff": "/demo-pages/static/media/Pacifico-Regular.02d6b15c9e719bbd81c3.woff",
     "static/media/Poppins-ExtraLight.woff2": "/demo-pages/static/media/Poppins-ExtraLight.25cf04acbb4140875dc5.woff2",
     "static/media/Poppins-Regular.woff2": "/demo-pages/static/media/Poppins-Regular.a0d979a31236cb0771a2.woff2",
@@ -31,11 +31,11 @@
     "static/media/AnticDidone-Regular.woff2": "/demo-pages/static/media/AnticDidone-Regular.9251b51028d9746af7a3.woff2",
     "static/media/AnticDidone-Regular.woff": "/demo-pages/static/media/AnticDidone-Regular.bedad02ffe8d07486f3b.woff",
     "index.html": "/demo-pages/index.html",
-    "main.82701254.css.map": "/demo-pages/static/css/main.82701254.css.map",
-    "main.7e9f57c5.js.map": "/demo-pages/static/js/main.7e9f57c5.js.map"
+    "main.a1267679.css.map": "/demo-pages/static/css/main.a1267679.css.map",
+    "main.710ee3d0.js.map": "/demo-pages/static/js/main.710ee3d0.js.map"
   },
   "entrypoints": [
-    "static/css/main.82701254.css",
-    "static/js/main.7e9f57c5.js"
+    "static/css/main.a1267679.css",
+    "static/js/main.710ee3d0.js"
   ]
 }
