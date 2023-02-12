@@ -6,6 +6,7 @@ import { DemoOne } from "../DemoOne";
 import { DemoTwo } from "../DemoTwo";
 import { DemoThree } from "../DemoThree";
 import { DemoFour } from "../DemoFour";
+import { DemoFive } from "../DemoFive";
 import { NavigationButton } from "../../Components/NavigationButton";
 import main from "../../styles/main.module.scss";
 
@@ -23,6 +24,7 @@ export function Main() {
           <Route path="catallog/demo-2" element={<DemoTwo />} />
           <Route path="catallog/demo-3" element={<DemoThree />} />
           <Route path="catallog/demo-4" element={<DemoFour />} />
+          <Route path="catallog/demo-5" element={<DemoFive />} />
           <Route path="404" element={<NotFoundPage />} />
           <Route path="*" element={<Navigate to="404" />} />
         </Routes>
