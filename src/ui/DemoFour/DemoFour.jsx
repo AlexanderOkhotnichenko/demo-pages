@@ -1,10 +1,8 @@
 import React, { useState, useRef } from "react";
-
 import { useLocoScroll } from "../../hooks/useLocoScroll";
 import { useGSAPAnimation } from "./useGSAPAnimation";
 import { Loading } from "../../library/Loading";
 import { randomNumber } from "../../Components/randomNumber";
-import { CustomCursor } from "../../Components/CustomCursor";
 import { Home } from "./Home";
 import { About } from "./About";
 import { Banner } from "./Banner";
@@ -28,7 +26,6 @@ export function DemoFour() {
         <Loading />
       ) : (
         <>
-          <CustomCursor />
           <div
             className={demoFour.demo_four}
             data-scroll-container
