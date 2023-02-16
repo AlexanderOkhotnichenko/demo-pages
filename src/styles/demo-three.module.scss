@@ -1,6 +1,7 @@
 .demoThree {
   background-color: var(--color-10);
   position: relative;
+  overflow: hidden;
   &::before {
     content: "";
     position: absolute;
@@ -238,9 +239,4 @@
   .random_vis_item {
     display: block;
   }
-}
-
-
-@media (max-width: 1201px) {
-
 }

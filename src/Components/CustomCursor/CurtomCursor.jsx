@@ -6,7 +6,7 @@ export function CustomCursor() {
   const outorCursorRef = useRef();
   
   useEffect(() => {
-    const links = Array.from(document.querySelectorAll("a"));
+    const links = Array.from(document.querySelectorAll(".trigger-cursor"));
 
     const overCursor = () => innerCursorRef.current.classList.add(`${customCursor.grow}`);
     const leaveCursor = () => innerCursorRef.current.classList.remove(`${customCursor.grow}`);

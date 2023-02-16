@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { CSSRulePlugin } from "gsap/all";
 import { Content } from "../../Components/Content";
-import { splitText } from "./splitText";
+import { splitText } from "../../Components/splitText";
 import { randomNumber } from "../../Components/randomNumber";
 import { Loading } from "../../library/Loading";
 import demoThree from "../../styles/demo-three.module.scss";
@@ -182,20 +182,20 @@ export function DemoThree() {
                     <div className={demoThree.content__content_content}>
                       <div className={demoThree.content__content_left_panel_ingredients}>
                         <div className={demoThree.content__content_left_panel_ingredients_box}>
-                          <img src="./img/demo-3/flour.png" alt="Flour" className={demoThree.random_vis_item} />
+                          <img src="./img/demo-3/flour.webp" alt="Flour" className={demoThree.random_vis_item} />
                           <span>Пшеничная мука</span>
                         </div>
                         <div className={demoThree.content__content_left_panel_ingredients_box}>
-                          <img src="./img/demo-3/cream.png" alt="Cream" className={demoThree.random_vis_item} />
+                          <img src="./img/demo-3/cream.webp" alt="Cream" className={demoThree.random_vis_item} />
                           <span>Свежая сметана</span>
                         </div>
                         <div className={demoThree.content__content_left_panel_ingredients_box}>
-                          <img src="./img/demo-3/berries.png" alt="Berries" className={demoThree.random_vis_item} />
+                          <img src="./img/demo-3/berries.webp" alt="Berries" className={demoThree.random_vis_item} />
                           <span>Натуральные добавки (фрукты, орешки)</span>
                         </div>
                       </div>
                       <div className={demoThree.content__content_image}>
-                        <img src="./img/demo-3/cupcake-1.png" alt="Cupcake" />
+                        <img src="./img/demo-3/cupcake-1.webp" alt="Cupcake" />
                         <div className={demoThree.content__content_list_svg}>
                           <div className={demoThree.content__content_list_svg__item}>
                             <svg id="demo-3-svg" width="140px" height="140px" viewBox="0 -76.5 193 193" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -231,15 +231,15 @@ export function DemoThree() {
                       </div>
                       <div className={demoThree.content__content_right_panel_ingredients}>
                         <div className={demoThree.content__content_right_panel_ingredients_box}>
-                          <img src="./img/demo-3/eag.png" alt="Eag" className={demoThree.random_vis_item} />
+                          <img src="./img/demo-3/eag.webp" alt="Eag" className={demoThree.random_vis_item} />
                           <span>Куринные яйца</span>
                         </div>
                         <div className={demoThree.content__content_right_panel_ingredients_box}>
-                          <img src="./img/demo-3/milk.png" alt="Milk" className={demoThree.random_vis_item} />
+                          <img src="./img/demo-3/milk.webp" alt="Milk" className={demoThree.random_vis_item} />
                           <span>Коровье молоко</span>
                         </div>
                         <div className={demoThree.content__content_right_panel_ingredients_box}>
-                          <img src="./img/demo-3/oil.png" alt="Oil" className={demoThree.random_vis_item} />
+                          <img src="./img/demo-3/oil.webp" alt="Oil" className={demoThree.random_vis_item} />
                           <span>Cливочное масло</span>
                         </div>
                       </div>

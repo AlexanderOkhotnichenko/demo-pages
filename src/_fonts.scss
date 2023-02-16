@@ -124,3 +124,21 @@
   src: url("./fonts/BlackOpsOne-Regular.woff2") format('woff2'),
        url("./fonts/BlackOpsOne-Regular.woff") format('woff');
 }
+
+@font-face {
+  font-family: High Speed;
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/HighSpeed.woff2") format('woff2'),
+       url("./fonts/HighSpeed.woff") format('woff');
+}
+
+@font-face {
+  font-family: Sofia Pro;
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/SofiaPro-Regular.woff2") format('woff2'),
+       url("./fonts/SofiaPro-Regular.woff") format('woff');
+}

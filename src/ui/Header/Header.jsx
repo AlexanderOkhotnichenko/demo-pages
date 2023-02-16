@@ -19,7 +19,7 @@ export function Header() {
       <div className={header.header__container}>
         <Content className={`${header.header__content} ${header.content}`}>
           <span className={header.header__line}></span>
-          <Link to="/" className={header.logo}><SiNutanix /></Link>
+          <Link to="/" className={`${header.logo} trigger-cursor`}><SiNutanix /></Link>
           <Navbar openMenu={open} removeOpenClass={removeClass} />
           <BurgerMenu setOpenClass={getState} addOpenClass={open} />
           <Socialbar />

@@ -262,7 +262,7 @@ export function DemoTwo() {
                     <div className={`${demoTwo.content__content_bubbles__bubble} ${demoTwo.i_5}`}></div>
                   </div>
                   <div className={demoTwo.content__content_buttle}>
-                    <img src="./img/demo-2/bottle.png" alt="Bottle" />
+                    <img src="./img/demo-2/bottle.webp" alt="Bottle" />
                   </div>
                 </div>
                 <div className={demoTwo.content__box}>
@@ -279,16 +279,16 @@ export function DemoTwo() {
                     <div className={`${demoTwo.content__content_mass_row} ${demoTwo.i_2}`}>
                       <div className={demoTwo.content__content_mass_products}>
                         <div className={demoTwo.content__content_mass_products__item}>
-                          <img src="./img/demo-2/kiwi.png" alt="Kiwi" />
+                          <img src="./img/demo-2/kiwi.webp" alt="Kiwi" />
                         </div>
                         <div className={demoTwo.content__content_mass_products__item}>
-                          <img src="./img/demo-2/banana.png" alt="Banana" />
+                          <img src="./img/demo-2/banana.webp" alt="Banana" />
                         </div>
                         <div className={demoTwo.content__content_mass_products__item}>
-                          <img src="./img/demo-2/cherry.png" alt="Cherry" />
+                          <img src="./img/demo-2/cherry.webp" alt="Cherry" />
                         </div>
                         <div className={demoTwo.content__content_mass_products__item}>
-                          <img src="./img/demo-2/avocado.png" alt="Avocado" />
+                          <img src="./img/demo-2/avocado.webp" alt="Avocado" />
                         </div>
                       </div>
                       <span className={demoTwo.content__content_mass_row_media}>Nutritional values:</span>

@@ -32,7 +32,7 @@ export function Card({ id, img, tags = [], link, description, loading }) {
             </li>
           ))}
         </ul>
-        <Link to={link.link} className={card.card__link}>
+        <Link to={link.link} className={`${card.card__link} trigger-cursor`}>
           <span>{link.title}</span>
         </Link>
       </div>

@@ -65,7 +65,7 @@ export function DemoFive() {
                 </div>
               </div>
               <div className={demoFive.land_image}>
-                <img src="./img/demo-5/land.jpg" alt="Land" />
+                <img src="./img/demo-5/land.webp" alt="Land" />
               </div>
             </Content>
           </Section>
