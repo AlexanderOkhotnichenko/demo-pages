@@ -403,6 +403,29 @@
   .bottomBar {
     justify-content: space-around;
   }
+
+  .arc_hero {
+
+    &.is_1 img {
+      transform: scale(1.4) translateY(30px) translateX(-55px);
+    }
+
+    &.is_2 img {
+      transform: scale(1.4) translateY(35px) translateX(30px);
+    }
+
+    &.is_4 img {
+      transform: scale(1.4) translateY(5px) translateX(-5px);
+    }
+
+    &.is_5 img {
+      transform: scale(1.4) translateY(0) translateX(-50px);
+    }
+
+    &.is_6 img {
+      transform: scale(1.4) translateY(0) translateX(60px);
+    }
+  }
 }
 
 @media (max-width: 952px) {
@@ -444,32 +467,95 @@
 }
 
 @media (max-width: 671px) {
-  .arc_hero img {
-    width: 130%;
-    max-width: none;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
 
-  .arc_hero .point_box {
-    &.six {
-      top: 51%;
-      left: 80%;
+  .arc_hero {
+    img {
+      width: 130%;
+      max-width: none;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
-    &.seven {
-      top: 51%;
-      left: 14%;
+    .point_box {
+      &.one {
+        top: 6%;
+        left: 58%;
+      }
+
+      &.two {
+        top: 20%;
+        right: 16%;
+      }
+
+      &.three {
+        top: 17%;
+        left: 33%;
+      }
+
+      &.four {
+        top: 35%;
+        left: 37%;
+      }
+
+      &.five {
+        top: 45%;
+        left: 55%;
+      }
+
+      &.six {
+        top: 51%;
+        left: 80%;
+      }
+  
+      &.seven {
+        top: 51%;
+        left: 14%;
+      }
+    }
+
+    &.is_0 img {
+      transform: scale(1.4) translateY(45px) translateX(-38.5%);
+    }
+  
+    &.is_1 img {
+      transform: scale(1.4) translateY(30px) translateX(-43%);
+    }
+  
+    &.is_2 img {
+      transform: scale(1.4) translateY(30px) translateX(-30%);
+    }
+  
+    &.is_3 img {
+      transform: scale(1.4) translateY(8px) translateX(-33%);
+    }
+  
+    &.is_4 img {
+      transform: scale(1.4) translateY(-5px) translateX(-36%);
+    }
+  
+    &.is_5 img {
+      transform: scale(1.4) translateY(-17px) translateX(-42%);
+    }
+  
+    &.is_6 img {
+      transform: scale(1.4) translateY(-15px) translateX(-28%);
     }
   }
 
   .socialBar {
-    bottom: 80px;
+    bottom: 5em;
+    >*:not(:last-child) {
+      padding-bottom: 20px;
+    }
   }
 
   .btn_scroll_bottom {
-    bottom: 80px;
+    bottom: 5em;
+    svg {
+      width: 12px;
+      height: 200px;
+    }
   }
 }
 
@@ -479,20 +565,78 @@
   }
 }
 
-@media (max-width: 425px) {
-  .arc_hero img {
-    width: 170%;
-  }
-
-  .arc_hero .point_box {
-    &.six {
-      top: 53%;
-      left: 88%;
+@media (max-width: 480px) {
+  .arc_hero {
+    .point_box {
+      &.six {
+        top: 51%;
+        left: 79%;
+      }
+      &.seven {
+        top: 51%;
+        left: 13%;
+      }
     }
 
-    &.seven {
-      top: 52%;
-      left: 2.5%;
+    &.is_4 img {
+      transform: scale(1.4) translateY(8px) translateX(-36%);
+    }
+
+    &.is_5 img {
+      transform: scale(1.4) translateY(0) translateX(-43%);
+    }
+  
+    &.is_6 img {
+      transform: scale(1.4) translateY(0) translateX(-28.5%);
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .arc_hero {
+    img {
+      width: 170%;
+    }
+    .point_box {
+      &.two {
+        top: 21%;
+        right: 5%;
+      }
+
+      &.three {
+        top: 17%;
+        left: 25%;
+      }
+
+      &.four {
+        top: 36%;
+        left: 33%;
+      }
+    
+      &.six {
+        top: 51%;
+        left: 88%;
+      }
+
+      &.seven {
+        top: 52%;
+        left: 2.5%;
+      }
+      
+      // &.is_4 img {
+      //   transform: scale(1.4) translateY(8px) translateX(-36%);
+      // }
+    }
+    &.is_0 img {
+      transform: scale(1.4) translateY(40px) translateX(-38.5%);
+    }
+
+    &.is_2 img {
+      transform: scale(1.4) translateY(30px) translateX(-32%);
+    }
+
+    &.is_4 img {
+      transform: scale(1.4) translateY(0) translateX(-39%);;
     }
   }
 
@@ -512,16 +656,6 @@
 
   .content.one {
     padding: 0;
-  }
-
-  .socialBar {
-    >*:not(:last-child) {
-      padding-bottom: 20px;
-    }
-  }
-
-  .btn_scroll_bottom svg {
-    width: 12px;
   }
 
   .bottomBar {

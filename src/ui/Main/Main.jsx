@@ -17,9 +17,9 @@ export function Main() {
 
   return (
       <main className={`${main.main} ${main.padding}`}>
-        {/* <NavigationButton className="navigation-button" type="button">
+        <NavigationButton className="navigation-button" type="button">
           <span>Back</span>
-        </NavigationButton> */}
+        </NavigationButton>
         <Routes>
           <Route path="/" element={<Navigate to="catallog" />} />
           <Route path="catallog" element={<CatallogPage />} />
