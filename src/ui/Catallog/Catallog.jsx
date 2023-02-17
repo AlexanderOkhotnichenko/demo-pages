@@ -40,11 +40,6 @@ export function Catallog() {
         <Content className={`${catallog.catallog__content} ${catallog.content}`}>
           {renderCards()}
         </Content>
-        <Content className={`${catallog.catallog__content} ${catallog.content}`}>
-          <ShowMoreButton className="show-more-button" type="button">
-            <span>Show more</span>
-          </ShowMoreButton>
-        </Content>
       </div>
     </section>
   );

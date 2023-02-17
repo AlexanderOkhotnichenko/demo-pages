@@ -12,10 +12,6 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     max-width: 1100px;
-    &:last-child {
-      display: block;
-      padding: 0 0 50px 0;
-    }
   }
 }
 
