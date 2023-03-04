@@ -5,25 +5,30 @@ export function Skeleton(props) {
   return (
     <ContentLoader
       speed={2}
-      width={500}
-      height={547}
-      viewBox="0 0 500 547"
+      width={345}
+      height={500}
+      viewBox="0 0 345 500"
       backgroundColor="#f5f5f5"
       foregroundColor="#dbdbdb"
-      {...props}>
-      <rect x="100" y="0" rx="5" ry="5" width="8" height="547" />
-      <rect x="100" y="0" rx="5" ry="5" width="400" height="8" />
-      <rect x="492" y="0" rx="5" ry="5" width="8" height="547" />
-      <rect x="100" y="539" rx="5" ry="5" width="400" height="8" />
-      <rect x="0" y="30" rx="5" ry="5" width="400" height="220" />
-      <rect x="430" y="30" rx="50" ry="50" width="35" height="35" />
-      <rect x="430" y="75" rx="50" ry="50" width="35" height="35" />
-      <rect x="430" y="120" rx="50" ry="50" width="35" height="35" />
-      <rect x="430" y="165" rx="50" ry="50" width="35" height="35" />
-      <rect x="430" y="210" rx="50" ry="50" width="35" height="35" />
-      <rect x="125" y="270" rx="5" ry="5" width="350" height="2" />
-      <rect x="125" y="290" rx="5" ry="5" width="350" height="155" />
-      <rect x="200" y="465" rx="25" ry="25" width="200" height="54" />
+      {...props}
+    >
+      <rect x="298" y="248" rx="0" ry="0" width="1" height="0" />
+      <rect x="0" y="0" rx="5" ry="5" width="345" height="5" />
+      <rect x="340" y="-1" rx="5" ry="5" width="5" height="500" />
+      <rect x="0" y="0" rx="5" ry="5" width="5" height="500" />
+      <rect x="0" y="495" rx="5" ry="5" width="345" height="5" />
+      <rect x="20" y="32" rx="5" ry="5" width="300" height="200" />
+      <circle cx="40" cy="270" r="20" />
+      <circle cx="105" cy="270" r="20" />
+      <circle cx="174" cy="270" r="20" />
+      <circle cx="236" cy="270" r="20" />
+      <circle cx="302" cy="270" r="20" />
+      <rect x="20" y="310" rx="5" ry="5" width="300" height="3" />
+      <rect x="20" y="340" rx="5" ry="5" width="300" height="10" />
+      <rect x="20" y="360" rx="5" ry="5" width="300" height="10" />
+      <rect x="20" y="380" rx="5" ry="5" width="300" height="10" />
+      <rect x="20" y="400" rx="5" ry="5" width="300" height="10" />
+      <rect x="80" y="429" rx="18" ry="18" width="180" height="35" />
     </ContentLoader>
   );
 }

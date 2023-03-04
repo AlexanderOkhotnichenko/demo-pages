@@ -24,7 +24,7 @@ export function Catallog() {
   }, []);
 
   const renderCards = () => {
-    return (loading ? [...Array(4)] : cards).map((card, index) => (
+    return (loading ? [...Array(6)] : cards).map((card, index) => (
       <Card
         key={index}
         loading={loading}
