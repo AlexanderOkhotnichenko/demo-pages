@@ -1,7 +1,6 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { CatallogPage } from "../../pages/CatallogPage";
-import { NotFoundPage } from "../../pages/NotFoundPage";
 
 import { DemoOne } from "../DemoOne";
 import { DemoTwo } from "../DemoTwo";
@@ -16,7 +15,7 @@ import main from "../../styles/main.module.scss";
 export function Main() {
 
   return (
-      <main className={`${main.main} ${main.padding}`}>
+      <main className={main.main}>
         <NavigationButton className="navigation-button" type="button">
           <span>Back</span>
         </NavigationButton>
@@ -29,8 +28,6 @@ export function Main() {
           <Route path="catallog/demo-4" element={<DemoFour />} />
           <Route path="catallog/demo-5" element={<DemoFive />} />
           <Route path="catallog/demo-6" element={<DemoSix />} />
-          <Route path="404" element={<NotFoundPage />} />
-          <Route path="*" element={<Navigate to="404" />} />
         </Routes>
       </main>
   );

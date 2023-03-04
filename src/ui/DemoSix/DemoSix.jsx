@@ -3,12 +3,12 @@ import { useGSAPAnimation } from "./useGSAPAnimation";
 import { Section } from "../../Components/Section";
 import { Content } from "../../Components/Content";
 import { TopBar } from "./TopBar";
-import { TopFigure } from "./TopFigure";
+import { TopFigure }  from "./TopFigure";
 import { OutlineCenterArc } from "./OutlineCenterArc";
 import { CenterBoxTitle } from "./CenterBoxTitle";
-import { CenterMotoBox } from "./CenterMotoBox";
 import { SocialBar } from "./SocialBar";
 import { BtnScrollBottom } from "./BtnScrollBottom";
+import { CenterMotoBox } from "./CenterMotoBox";
 import { BottomBar } from "./BottomBar";
 import demoSix from "../../styles/demo-six/demo-six.module.scss";
 
@@ -71,7 +71,7 @@ export function DemoSix() {
           <TopFigure />
           <OutlineCenterArc />
           <CenterBoxTitle />
-          <SocialBar />z
+          <SocialBar />
           <BtnScrollBottom />
           <CenterMotoBox arcHeroRef={arcHeroRef} />
         </Content>

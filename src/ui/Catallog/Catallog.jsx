@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Content } from "../../Components/Content";
 import { Card } from "../../Components/Card";
-import { ShowMoreButton } from "../../Components/ShowMoreButton";
 import catallog from "../../styles/catallog.module.scss";
 
 export function Catallog() {
